@@ -19,10 +19,10 @@ public class CasaGUI extends JButton {
     private static final Color COR_DESTAQUE = new Color(0, 1, 0, 0.4f);
 
     // Icones das pecas
-    private static final URL PEDRA_BRANCA_URL = CasaGUI.class.getResource("/images/pedra_branca.png");
-    private static final URL DAMA_BRANCA_URL = CasaGUI.class.getResource("/images/dama_branca.png");
-    private static final URL PEDRA_VERMELHA_URL = CasaGUI.class.getResource("/images/pedra_vermelha.png");
-    private static final URL DAMA_VERMELHA_URL = CasaGUI.class.getResource("/images/dama_vermelha.png");
+    private static final URL PEDRA_BRANCA_URL = CasaGUI.class.getResource("/resources/pedra_branca.png");
+    private static final URL DAMA_BRANCA_URL = CasaGUI.class.getResource("/resources/dama_branca.png");
+    private static final URL PEDRA_VERMELHA_URL = CasaGUI.class.getResource("/resources/pedra_vermelha.png");
+    private static final URL DAMA_VERMELHA_URL = CasaGUI.class.getResource("/resources/dama_vermelha.png");
 
     private static final Icon PEDRA_BRANCA = new ImageIcon(PEDRA_BRANCA_URL);
     private static final Icon DAMA_BRANCA = new ImageIcon(DAMA_BRANCA_URL);
@@ -95,11 +95,9 @@ public class CasaGUI extends JButton {
 
         if (icone == PEDRA_BRANCA || icone == DAMA_BRANCA) {
             return PECA_BRANCA;
-        }
-        else if (icone == PEDRA_VERMELHA || icone == DAMA_VERMELHA) {
+        } else if (icone == PEDRA_VERMELHA || icone == DAMA_VERMELHA) {
             return PECA_VERMELHA;
-        }
-        else {
+        } else {
             return SEM_PECA;
         }
     }
