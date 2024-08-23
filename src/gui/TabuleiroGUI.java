@@ -4,7 +4,6 @@ import java.awt.Color;
 import javax.swing.JPanel;
 
 import objetos.*;
-import controller.Jogo;
 
 public class TabuleiroGUI extends JPanel {
 
